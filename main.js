@@ -25,13 +25,34 @@ const changeFoodPosition = () => {
 };
 
 
+
 const handleGameOver = () =>{
   //clearing the timer and reloading the page on game over 
   clearInterval(setIntervalId)
-  alert("Game over 🤦‍♂️ Press ok or close to play again 😃")
-  location.reload()
+
+
+   //display alert using CSS and JavaScript
+   const alertBox = document.createElement("div");
+   alertBox.innerText = "Game over 🤦‍♂️ Try agin 😃";
+   alertBox.style.backgroundColor = "red";
+   alertBox.style.color = "white";
+   alertBox.style.position = "fixed";
+   alertBox.style.top = "50%";
+   alertBox.style.left = "50%";
+   alertBox.style.transform = "translate(-50%, -50%)";
+   alertBox.style.padding = "10px";
+   alertBox.style.borderRadius = "5px";
+   alertBox.style.boxShadow = "0px 0px 10px rgba(0, 0, 0, 0.5)";
+   document.body.appendChild(alertBox);
+   //remove alert after 3 seconds
+   setTimeout(() => {
+     alertBox.parentNode.removeChild(alertBox);
+     location.reload()
+   }, 2000);
+
 }
 
+  
 
 
 const changeDirection = (e) => {
