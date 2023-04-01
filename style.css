@@ -89,6 +89,12 @@ body {
     padding: 15px 0;
     font-size: 1rem;
   }
+
+  footer {
+  margin-top: -80px;
+  
+  
+  }
 }
 
 footer {
