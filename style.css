@@ -18,7 +18,7 @@ body {
 
 .snakeTitle{
   position: absolute;
-  top: 90px;
+  top: 100px;
  display: flex;
 }
 .snakeTitle h1{
@@ -116,7 +116,7 @@ body {
   }
   
   footer {
-margin-top: -145px;
+margin-top: -110px;
   }
 }
 
