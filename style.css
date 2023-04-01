@@ -16,6 +16,20 @@ body {
   background-attachment: fixed;
 }
 
+.snakeTitle{
+  position: absolute;
+  top: 90px;
+ display: flex;
+}
+.snakeTitle h1{
+  color: #fff;
+}
+.snakeTitle img{
+  width: 50px;
+  margin-left: 5px;
+}
+
+
 .wrapper {
   width: 65vmin;
   height: 70vmin;
@@ -102,7 +116,7 @@ body {
   }
   
   footer {
-  margin-top: -110px;
+margin-top: -145px;
   }
 }
 
