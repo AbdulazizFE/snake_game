@@ -28,22 +28,55 @@ const changeFoodPosition = () => {
 const handleGameOver = () =>{
   //clearing the timer and reloading the page on game over 
   clearInterval(setIntervalId)
-  alert("Game over! Press ok to play again....")
+  alert("Game over 🤦‍♂️ Press ok or close to play again 😃")
   location.reload()
-
 }
+
+
+
 const changeDirection = (e) => {
   //change velocity value bassed on key press
-  if (e.key === "ArrowUp" && velocityY != 1) {
+  if (e.key === "ArrowUp" && velocityY != 1 ) {
     velocityX = 0;
     velocityY = -1;
-  } else if (e.key === "ArrowDown" && velocityY != -1) {
+
+  } 
+  
+ else if (e.key === "ArrowUp" && velocityY != -1 ) {
+    velocityX = 0;
+    velocityY = -1;
+  }
+  
+  
+  else if (e.key === "ArrowDown" && velocityY != -1) {
     velocityX = 0;
     velocityY = 1;
-  } else if (e.key === "ArrowLeft" && velocityX != 1) {
+  }
+  
+  else if (e.key === "ArrowDown" && velocityY != 1) {
+    velocityX = 0;
+    velocityY = 1;
+  } 
+  
+  
+  else if (e.key === "ArrowLeft" && velocityX != 1) {
     velocityX = -1;
     velocityY = 0;
-  } else if (e.key === "ArrowRight" && velocityX != -1) {
+  } 
+  
+  
+  else if (e.key === "ArrowLeft" && velocityX != -1) {
+    velocityX = -1;
+    velocityY = 0;
+  }
+  
+  else if (e.key === "ArrowRight" && velocityX != -1) {
+    velocityX = 1;
+    velocityY = 0;
+  }
+
+
+  else if (e.key === "ArrowRight" && velocityX != 1) {
     velocityX = 1;
     velocityY = 0;
   }
